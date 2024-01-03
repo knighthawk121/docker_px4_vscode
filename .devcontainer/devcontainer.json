@@ -14,19 +14,17 @@
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume=/mnt/wslg:/mnt/wslg",
-		"--ipc=host",
-		"--ipc=host",
-		// uncomment to use intel iGPU
-		"--device=/dev/dri"
-		"--device=/dev/dri"
+		"--volume=/usr/lib/wsl:/usr/lib/wsl",
+		"--device=/dev/dxg",
+		"--ipc=host"
+
+		
 	],
 	"containerEnv": {
 		"DISPLAY": ":0", // Needed for GUI try ":0" for windows
 		"WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
 		"XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}",
 		"PULSE_SERVER": "${localEnv:PULSE_SERVER}",
-		"LD_LIBRARY_PATH": "/usr/lib/wsl/lib",
-		"LIBGL_ALWAYS_SOFTWARE": "1" // Needed for softwd for software rendering of opengl
 		"LD_LIBRARY_PATH": "/usr/lib/wsl/lib",
 		"LIBGL_ALWAYS_SOFTWARE": "1" // Needed for softwd for software rendering of opengl
 	},
