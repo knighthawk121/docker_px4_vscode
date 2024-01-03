@@ -15,7 +15,7 @@ RUN git clone --recursive https://github.com/PX4/PX4-Autopilot.git /home/ros/PX4
 
 # Install Python dependencies
 RUN pip3 uninstall em && \
-    pip3 install -U empy pyros-genmsg setuptools
+    pip3 install -U empy==3.3.4 pyros-genmsg setuptools
 
 # Clone and build Micro-XRCE-DDS-Agent
 RUN git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git /home/ros/Micro-XRCE-DDS-Agent && \
