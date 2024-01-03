@@ -1,5 +1,4 @@
 # VSCode ROS2 PX4 Docker Dev Environment
-
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://github.com/edouardrolland/vscode_ros2_px4_workspace/actions/workflows/ros.yaml/badge.svg)](https://github.com/edouardrolland/vscode_ros2_px4_workspace/actions/workflows/ros.yaml)
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
